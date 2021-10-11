@@ -7,6 +7,7 @@ Du kennst bereits die [Datentypen](https://javascript.info/types) *Strings* (Zei
 ## Arrays
 
 - Ein Array ist eine Liste von Werten, z.B. `[3, "a", -1]`
+- Die Werte stehen zwischen eckigen Klammern und sind mit Kommas getrennt.
 - Mit der Funktion `push()` kannst du einen Wert an die Liste anfügen.
 - Du kannst einen Array «leer» initialisieren und dann erst Werte einfügen.
 
@@ -78,7 +79,9 @@ for (let item of myArray) {
 ## Objekte
 
 - Ein Objekt ist eine *Datensammlung*: wie ein Array kann ein Objekt mehrere Werte enthalten.
+- Geschrieben werden Objekte mit geschweiften Klammern.
 - Im **Unterschied zu einem Array** haben die Werte in einem Objekt einen *Namen*.
+- Diese Namen werden auch als *Eigenschaften* eines Objekts bezeichnet.
 
 ```
 let myDessert = { 
@@ -88,12 +91,12 @@ let myDessert = {
 }
 ```
 
-- Mit diesen Namen kriegst du einzelne Werte eines Objekts: `myDessert.type` ist `"ice cream"`.
+- Mit diesen *Eigenschaften/Namen* kriegst du einzelne Werte eines Objekts: `myDessert.type` ist `"ice cream"`.
 - Dies wird *dot notation* genannt.
 
 ### Leere Initialisierung
 
-- Wie Arrays kannst du auch Objekte leer initialisieren.
+- Wie Arrays kannst du auch Objekte «leer» initialisieren, d.h. nur mit geschweiften Klammern.
 - Indem du ebenfalls die Punkt-Schreibweise benutzt, kannst du einem Objekt zusätzliche Namen/Wert-Paare geben: `myDessert.topping = "cherry"`
 
 ```
@@ -115,7 +118,7 @@ Mit Arrays und Objekten kannst du z.B. Positionsdaten speichern.
 let shapes = []
 
 function setup() {
-  createCanvas(400, 300)
+  createCanvas(400, 400)
   
   // Zwei Objekte in den Array «pushen».
   shapes.push({x: random() * width, y: random() * height})
